@@ -1,6 +1,5 @@
 # Meal Maven
 
-![Meal Maven](path/to/your/screenshot.png)
 
 **Meal Maven** is an engaging web application designed to help users effortlessly discover and explore a diverse range of recipes based on the ingredients they have at home. This interactive platform simplifies meal planning, making it both enjoyable and convenient.
 
