@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    position: relative;
+  }
+  
+  ul li::before {
+    content: "•";
+    color: #000000;
+    font-weight: bold;
+    position: absolute;
+    left: -20px;
+  }
+  
+
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  
+  .navbar {
+    background-color: #000000;
+    overflow: hidden;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
