@@ -91,6 +91,8 @@ body{
 .meal-result{
     margin-top: 4rem;
 }
+
+
 #meal{
     margin: 2.4rem 0;
 }
@@ -418,3 +420,120 @@ footer p {
     display: block; 
   }
 
+  .spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto; 
+    display: none; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.meal-list-error {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000; 
+    justify-content: flex-start; 
+    text-align: left; 
+    margin-left: 50px; 
+    margin-right: 50px; 
+    padding: 10px 0; 
+   
+    border-radius: 5px; 
+   
+}
+
+
+@media (max-width: 768px) {
+    .meal-list-error {
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .meal-list-error {
+        font-size: 0.9rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+.meal-filters {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+.meal-filters label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+.meal-filters select, 
+.meal-filters input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+
+.meal-filters select:hover, 
+.meal-filters input:hover {
+    border-color: #007bff;
+}
+
+
+.meal-filters select:focus, 
+.meal-filters input:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+
+#meal-type-filter {
+    width: 100%;
+}
+
+
+#max-calories {
+    width: 100%;
+}
+
+
+.meal-filters .filter-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 250px;
+}
+
+
+@media (max-width: 768px) {
+    .meal-filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
