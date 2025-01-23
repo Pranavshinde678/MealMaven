@@ -22,8 +22,9 @@
 ## Usage
 
 1. Enter the ingredients you have in the search bar.
-2. Click the search button or press Enter to find recipes.
-3. Browse the recipe results and click on "View Recipe" to open the detailed recipe in a new tab.
+2. Enter the meal type and set a calorie limit find recipes that fit your dietary preferences.
+3. Click the search button or press Enter to find recipes
+4. Browse the recipe results and click on "View Recipe" to open the detailed recipe in a new tab.
 
 ## License
 
