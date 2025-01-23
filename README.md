@@ -9,6 +9,9 @@
 - **Diverse Recipe Collection**: Browse through a wide variety of recipes from different cuisines.
 - **Intuitive User Interface**: Enjoy a seamless and user-friendly experience with easy navigation.
 - **Recipe Details**: View detailed recipes including ingredients, instructions, and images.
+- **Filters:** Narrow down your search results with the following filters:
+          **Meal Type:** Filter by meal types such as breakfast, lunch, dinner, or snacks.
+          **Max Calories:** Set a maximum calorie limit to find recipes that fit your dietary preferences.
 
 ## Technologies Used
 
