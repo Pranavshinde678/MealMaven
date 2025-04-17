@@ -24,7 +24,7 @@ async function searchRecipes() {
     const mealType = mealTypeFilter.value;
     const maxCalories = maxCaloriesInput.value.trim();
 
-    let url = `https://api.edamam.com/search?q=${searchValue}&app_id=7aa516a5&app_key=dc836a223fb788b11ae390504d9e97ce&from=0&to=10`;
+    let url = `https://api.edamam.com/api/recipes/v2?type=public&q=${searchValue}&app_id=7aa516a5&app_key=dc836a223fb788b11ae390504d9e97ce&from=0&to=10`;
 
     loadingSpinner.style.display = 'block';
 
