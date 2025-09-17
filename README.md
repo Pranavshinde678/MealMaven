@@ -36,7 +36,7 @@
 2. Enter the meal type and set a calorie limit to find recipes that fit your dietary preferences.  
 3. Click the search button or press Enter to find recipes.  
 4. Browse the recipe results and click on "View Recipe" to open the detailed recipe in a new tab.  
-5. Access the app via the IP or domain: [http://34.31.212.240](http://34.31.212.240) or `http://34.31.212.240:8080/`.  
+5. Access the app via the IP or domain: [http://34.31.212.240](http://34.31.212.240).  
 
 ## License
 
