@@ -1,0 +1,34 @@
+# Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mealmaven-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mealmaven
+  template:
+    metadata:
+      labels:
+        app: mealmaven
+    spec:
+      containers:
+      - name: mealmaven
+        image: gcr.io/YOUR_PROJECT_ID/mealmaven:1.0
+        ports:
+        - containerPort: 80
+
+---
+# Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: mealmaven-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: mealmaven
+  ports:
+  - port: 80
+    targetPort: 80
