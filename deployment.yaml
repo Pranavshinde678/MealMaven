@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meal-maven
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: meal-maven
+  template:
+    metadata:
+      labels:
+        app: meal-maven
+    spec:
+      containers:
+      - name: meal-maven
+        image: us-central1-docker.pkg.dev/meal-maven-472315/meal-maven-repo/meal-maven:latest
+        ports:
+        - containerPort: 80
