@@ -1,34 +1,32 @@
-# Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mealmaven-deployment
+  name: meal-maven
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: mealmaven
+      app: meal-maven
   template:
     metadata:
       labels:
-        app: mealmaven
+        app: meal-maven
     spec:
       containers:
-      - name: mealmaven
-        image: gcr.io/YOUR_PROJECT_ID/mealmaven:1.0
+      - name: meal-maven
+        image: us-central1-docker.pkg.dev/meal-maven-472315/meal-maven-repo/meal-maven:latest
         ports:
         - containerPort: 80
-
 ---
-# Service
 apiVersion: v1
 kind: Service
 metadata:
-  name: mealmaven-service
+  name: meal-maven-service
 spec:
   type: LoadBalancer
   selector:
-    app: mealmaven
+    app: meal-maven
   ports:
-  - port: 80
-    targetPort: 80
+    - protocol: TCP
+      port: 80
+      targetPort: 80
